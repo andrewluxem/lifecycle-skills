@@ -23,12 +23,12 @@ any skill directly.
 
 | # | Skill | Phase | What it does | Status |
 |---|-------|-------|--------------|--------|
-| 1 | `lifecycle-context` | Context | URL/description → auto-drafted business model, lifecycle stages, stack, active-metric, economics. Confirms by options, saves `.claude/lifecycle-context.md`. | 🚧 draft |
+| 1 | `lifecycle-context` | Context | URL/description → auto-drafted business model, lifecycle stages, stack, active-metric, economics. Confirms by options, saves `.claude/lifecycle-context.md`. | ✅ live |
 | 2 | `retention-diagnosis` | Diagnose | Reads the retention curve, locates the dominant leak (activation / early-life / mid-life / resurrection), sizes it, and runs the incrementality gut-check. | ✅ live |
-| 3 | `segmentation-model` | Strategy | RFM + behavioral/lifecycle segments as hypotheses with a validation plan, tied to the leak. | 🚧 draft |
-| 4 | `journey-architecture` | Strategy → Execution | Triggers, branches, timing, channel logic, suppression, exits, and a holdout hook per journey. | 🚧 draft |
-| 5 | `lifecycle-messaging` | Execution | The actual sequences + cadence, inside the fatigue caps, optimized for behavior not opens. | 🚧 draft |
-| 6 | `retention-metrics` | Execution | North Star + guardrails, cohort-stage targets, holdout experiments with kill criteria. | 🚧 draft |
+| 3 | `segmentation-model` | Strategy | RFM + behavioral/lifecycle segments as hypotheses with a validation plan, tied to the leak. | ✅ live |
+| 4 | `journey-architecture` | Strategy → Execution | Triggers, branches, timing, channel logic, suppression, exits, and a holdout hook per journey. | ✅ live |
+| 5 | `lifecycle-messaging` | Execution | The actual sequences + cadence, inside the fatigue caps, optimized for behavior not opens. | ✅ live |
+| 6 | `retention-metrics` | Execution | North Star + guardrails, cohort-stage targets, holdout experiments with kill criteria. | ✅ live |
 
 **Why this order:** `retention-diagnosis` is the anchor, not an afterthought.
 Segmenting, journey-building, and messaging all inherit the leak it finds, so the
