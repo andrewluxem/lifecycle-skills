@@ -1,0 +1,22 @@
+{
+  "name": "lifecycle-skills",
+  "owner": {
+    "name": "Andrew Luxem",
+    "url": "https://andrewluxem.com"
+  },
+  "metadata": {
+    "description": "Lifecycle & retention marketing skills for AI agents — the keep-and-grow half of the growth stack.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "retention-architect",
+      "source": "./Retention-Architect",
+      "description": "Diagnose the leak, segment by lifecycle stage, design the journeys, write the messages, and prove the lift. Retention strategy that defaults to 'show me the holdout' before it ships a campaign.",
+      "version": "0.1.0",
+      "author": { "name": "Andrew Luxem" },
+      "license": "MIT",
+      "keywords": ["retention", "lifecycle", "crm", "churn", "ltv", "segmentation", "email", "braze", "growth"]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "skill": "retention-diagnosis",
+  "evals": [
+    {
+      "name": "locates dominant leak before proposing tactics",
+      "prompt": "Our churn is up and I want to build a winback email flow. Retention curve: week0 100%, week1 92%, week2 61%, week4 55%, week8 52%, week12 50%.",
+      "expect": [
+        "identifies the early-life leak (week1->week2 slide), not winback, as the dominant zone",
+        "refuses to design the winback flow before the leak is placed",
+        "sizes the loss in retained-customer-months, not vibes"
+      ]
+    },
+    {
+      "name": "runs the incrementality gut-check",
+      "prompt": "We emailed at-risk subscribers and 28% renewed. That flow is a winner, right?",
+      "expect": [
+        "asks for the counterfactual / what share would have renewed anyway",
+        "recommends a 5-10% holdout before claiming lift",
+        "declines to call the 28% renewal rate incremental lift"
+      ]
+    },
+    {
+      "name": "flags product/pricing problems a message cannot fix",
+      "prompt": "Users love us in week 1 then stop logging in by week 3. Write me a re-engagement sequence.",
+      "expect": [
+        "flags this as a possible value-decay / product problem, not purely a messaging one",
+        "does not immediately produce a cadence as the fix",
+        "labels claims with evidence tags where data is missing"
+      ]
+    }
+  ]
+}

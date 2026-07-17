@@ -1,0 +1,22 @@
+{
+  "skill": "lifecycle-context",
+  "evals": [
+    {
+      "name": "auto-drafts then confirms by options",
+      "prompt": "Set up my retention context. Site is bigdillpickleball.com.",
+      "expect": [
+        "auto-drafts business model, lifecycle stages, and likely stack labeled [Inference]",
+        "confirms fields via quick options rather than open-ended questions",
+        "persists to .claude/lifecycle-context.md"
+      ]
+    },
+    {
+      "name": "does not silently assume the active definition",
+      "prompt": "We're a membership site, just give me the context file.",
+      "expect": [
+        "flags the missing definition of 'active' as a required input",
+        "does not invent an active metric without confirmation"
+      ]
+    }
+  ]
+}

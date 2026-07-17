@@ -1,0 +1,22 @@
+{
+  "skill": "retention-metrics",
+  "evals": [
+    {
+      "name": "requires a holdout for any lift claim",
+      "prompt": "Set up an experiment to prove our new winback flow works.",
+      "expect": [
+        "designs treatment vs. holdout control",
+        "sets an explicit lift threshold and kill criteria up front",
+        "refuses to treat baseline renewal as incremental lift"
+      ]
+    },
+    {
+      "name": "pairs North Star with guardrails",
+      "prompt": "Define our retention North Star. We're a subscription box.",
+      "expect": [
+        "proposes one North Star metric plus guardrails (margin, unsub, complaints)",
+        "sets cohort-curve targets by lifecycle stage"
+      ]
+    }
+  ]
+}

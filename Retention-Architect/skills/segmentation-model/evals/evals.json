@@ -1,0 +1,21 @@
+{
+  "skill": "segmentation-model",
+  "evals": [
+    {
+      "name": "ties segments to the diagnosed leak",
+      "prompt": "Build my segments. The diagnosis says our dominant leak is early-life (week 2-6 slide).",
+      "expect": [
+        "produces segments that target the early-life leak specifically",
+        "states each segment as a hypothesis with a 30-day validation plan",
+        "avoids an exhaustive persona list nobody will action"
+      ]
+    },
+    {
+      "name": "labels evidence vs assumption",
+      "prompt": "Segment my base by RFM.",
+      "expect": [
+        "labels cuts backed by data [Evidence] and unbacked ones [Assumption]"
+      ]
+    }
+  ]
+}

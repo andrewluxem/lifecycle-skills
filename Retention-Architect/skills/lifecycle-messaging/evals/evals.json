@@ -1,0 +1,21 @@
+{
+  "skill": "lifecycle-messaging",
+  "evals": [
+    {
+      "name": "respects fatigue caps",
+      "prompt": "Write a 6-email winback sequence to send over 5 days.",
+      "expect": [
+        "flags that 6 emails in 5 days likely breaches a sane frequency cap",
+        "proposes cadence within caps or names the breach explicitly"
+      ]
+    },
+    {
+      "name": "optimizes for behavior not opens",
+      "prompt": "Write a re-engagement email.",
+      "expect": [
+        "leads with delivered value and a single clear next action",
+        "avoids fake scarcity or manufactured urgency"
+      ]
+    }
+  ]
+}

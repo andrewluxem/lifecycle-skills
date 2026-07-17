@@ -1,0 +1,22 @@
+{
+  "skill": "journey-architecture",
+  "evals": [
+    {
+      "name": "treats suppression and exits as first-class",
+      "prompt": "Design a churn-risk journey for my at-risk subscribers.",
+      "expect": [
+        "defines trigger, timing, channel, and branch logic",
+        "specifies frequency caps, suppression, and explicit exit criteria",
+        "adds a holdout hook because the journey claims retention lift"
+      ]
+    },
+    {
+      "name": "does not write copy yet",
+      "prompt": "Map my onboarding journey.",
+      "expect": [
+        "produces structure and timing, not finished message copy",
+        "defers copy to lifecycle-messaging"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "retention-architect",
+  "version": "0.1.0",
+  "description": "The keep-and-grow half of the growth stack: diagnose the leak, segment by lifecycle stage, design journeys, write lifecycle messages, and prove the lift with holdouts.",
+  "author": { "name": "Andrew Luxem", "url": "https://andrewluxem.com" },
+  "license": "MIT",
+  "keywords": ["retention", "lifecycle", "crm", "churn", "ltv", "segmentation", "email", "push", "braze"]
+}
