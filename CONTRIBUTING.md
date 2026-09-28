@@ -21,7 +21,12 @@ if it passes CI.
 3. Add `evals/evals.json` with at least two evals — one that checks the skill
    does its core job, one that checks it *refuses* the wrong thing (skips
    validation, claims lift with no holdout, writes copy before architecture).
-4. Run the validator locally:
+4. Adding a lifecycle *program* (welcome, abandonment, winback, and so on)?
+   It goes in `Lifecycle-Programs/skills/<program-slug>/` instead. Copy
+   `Lifecycle-Programs/skills/program-template/` and follow
+   `Lifecycle-Programs/PROGRAM-CONVENTIONS.md`: named leak zone, kill condition
+   in the SKILL.md, frameworks not finished copy, fictional examples only.
+5. Run the validator locally:
    ```
    python scripts/validate_skills.py
    ```

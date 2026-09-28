@@ -1,0 +1,8 @@
+{
+  "name": "lifecycle-programs",
+  "version": "0.1.0",
+  "description": "The program library for the keep-and-grow half of the growth stack: deployable welcome, abandonment, post-purchase, winback, replenishment, and loyalty programs, each with message architecture, pre-send QA, and holdout-first measurement.",
+  "author": { "name": "Andrew Luxem", "url": "https://andrewluxem.com" },
+  "license": "MIT",
+  "keywords": ["lifecycle", "retention", "crm", "email", "sms", "welcome-series", "abandonment", "winback", "loyalty", "replenishment", "braze", "klaviyo", "iterable"]
+}

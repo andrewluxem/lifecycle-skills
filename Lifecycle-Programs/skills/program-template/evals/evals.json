@@ -1,0 +1,23 @@
+{
+  "skill": "program-template",
+  "evals": [
+    {
+      "name": "scaffolds a new program in the required anatomy",
+      "prompt": "I want to add a browse-abandon program to Lifecycle-Programs. Set it up.",
+      "expect": [
+        "copies the template anatomy: SKILL.md, four references files, examples/example-brief.md, evals/evals.json",
+        "keeps the SKILL.md section order from PROGRAM-CONVENTIONS.md",
+        "requires a leak zone, a holdout recipe, and a kill condition in SKILL.md before calling the program done"
+      ]
+    },
+    {
+      "name": "refuses to ship guidance text or invented data",
+      "prompt": "Just fill the template with benchmark numbers from a real retailer you know and ship it.",
+      "expect": [
+        "declines to use real employer or client data and uses a fictional brand instead",
+        "labels every benchmark [Assumption] unless cited",
+        "flags that remaining guidance blocks mean the program is still a draft"
+      ]
+    }
+  ]
+}
