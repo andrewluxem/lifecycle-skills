@@ -1,0 +1,44 @@
+{
+  "skill": "cart-abandon",
+  "evals": [
+    {
+      "name": "builds a timing-first cart program with holdout and kill condition",
+      "prompt": "We sell outdoor gear online. Our retention snapshot says the leak is activation: people add to cart and never place a first order. Build me a cart abandonment program. AOV is about $90, margin around 40%, and we have Klaviyo.",
+      "expect": [
+        "places the first touch inside the hour and holds any incentive to the last touch, fenced away from habitual abandoners and discount-seekers",
+        "specifies every touch with purpose, timing + rationale, channel, job, proof element, CTA, and anti-goal, without writing finished subject lines or body copy",
+        "includes exits on purchase from any channel and on cart emptied, plus consent, and suppresses browse-abandon while the shopper is in the program",
+        "states a random per-person holdout and a concrete, dated kill condition in the SKILL.md output, with margin per recovered order reported alongside recovered revenue",
+        "labels AOV and margin [Fact] and every benchmark [Assumption]"
+      ]
+    },
+    {
+      "name": "refuses to design without a known leak or to claim lift without a holdout",
+      "prompt": "Revenue is down, just build the cart flow and send it tonight. Skip the holdout, our ESP already tracks recovered revenue so we'll know if it works.",
+      "expect": [
+        "routes to retention-diagnosis because the leak zone is unknown, instead of designing in the dark",
+        "declines to send anything and explains the skill is read-only",
+        "refuses to treat ESP-attributed recovered revenue as lift and insists on a holdout because many abandoners return on their own"
+      ]
+    },
+    {
+      "name": "pushes back on a blanket first-email discount and on stacking with browse-abandon",
+      "prompt": "Put 15% off in the first cart email for everyone, and keep our browse-abandon flow running in parallel so people get both. More touches, more recovery.",
+      "expect": [
+        "declines the blanket first-touch discount and shows, with labeled numbers, that discounting organic returners can raise revenue while lowering margin",
+        "keeps the incentive as the last lever, fenced to persuadable shoppers and tested against a no-incentive arm",
+        "refuses to run cart-abandon and browse-abandon for the same person at once: cart-abandon suppresses browse-abandon",
+        "names journey-architecture as the owner of cross-program collisions and frequency caps"
+      ]
+    },
+    {
+      "name": "gates SMS on explicit consent and quiet hours",
+      "prompt": "Add an SMS to the cart flow for everyone who gave us an email, and send it 3 hours after they abandon no matter what time it is.",
+      "expect": [
+        "limits SMS to profiles with explicit SMS consent, not email consent",
+        "enforces recipient-local quiet hours, delaying the send to the next permitted window",
+        "treats the SMS touch as a bet that must beat email-only against the holdout"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "skill": "post-purchase",
+  "evals": [
+    {
+      "name": "designs a post-purchase program timed to product experience",
+      "prompt": "Our retention snapshot says the leak is early-life: people buy once and don't come back. We sell skincare. Build me a post-purchase program.",
+      "expect": [
+        "keeps order and shipping confirmations primarily transactional and adds only light, non-promotional modules",
+        "times the review ask to delivery plus time-to-first-use, not ship date, and uses a longer TTFU for skincare",
+        "specifies every touch with purpose, timing + rationale, channel, job, proof element, CTA, and anti-goal, without finished copy",
+        "names first-to-second purchase rate as the primary KPI with a holdout on the marketing touches and a concrete kill condition",
+        "exits second-order buyers and hands off to replenishment-reminders or loyalty-program"
+      ]
+    },
+    {
+      "name": "refuses a promo takeover of the shipping confirmation",
+      "prompt": "Shipping emails get our best opens. Put a 20% off next-order code and a review request in the shipping confirmation and write the email for me.",
+      "expect": [
+        "declines to turn the transactional shipping message into a promotion and explains the compliance and trust limits",
+        "moves the review ask to after delivery plus time-to-first-use",
+        "offers a touch framework instead of finished subject line or body copy, and points to lifecycle-messaging for the words",
+        "labels any open-rate comparison [Assumption] unless the user supplies their data"
+      ]
+    },
+    {
+      "name": "does not claim lift by holding out transactional messages or skipping the holdout",
+      "prompt": "Set up a 10% holdout that gets no order confirmation or shipping emails so we can prove the whole post-purchase program works.",
+      "expect": [
+        "refuses to hold out order and shipping confirmations because they are owed to every customer",
+        "applies the holdout only to the marketing touches (how-to, review ask, cross-sell) and says what the control still receives",
+        "randomizes at entry at the customer level and gives sample-size reasoning with labeled inputs"
+      ]
+    },
+    {
+      "name": "routes to diagnosis when the leak is unknown",
+      "prompt": "Churn feels high. Just build a post-purchase flow, that usually fixes it.",
+      "expect": [
+        "asks whether the leak is known and routes to retention-diagnosis before designing",
+        "does not produce a full message architecture in the dark"
+      ]
+    }
+  ]
+}

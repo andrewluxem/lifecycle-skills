@@ -1,0 +1,45 @@
+{
+  "skill": "loyalty-program",
+  "evals": [
+    {
+      "name": "models economics before designing loyalty comms",
+      "prompt": "Our retention snapshot says the leak is second-to-third purchase. We sell pet food DTC, AOV $45, 40% margin, reorder every 30 days. Design our loyalty program and its emails.",
+      "expect": [
+        "fills an earn/burn table (earn rate, redemption value, cost per point, expected redemption rate, breakage, liability) before specifying any touch",
+        "states breakage as a number and checks the program breaks even at full redemption",
+        "recommends points over tiers for a high-frequency, low-AOV category and says why",
+        "specifies touches with the seven fields (purpose, timing + rationale, channel, job, proof element, CTA, anti-goal) and writes no finished copy",
+        "puts the holdout on the earn accelerator, randomized per member upstream in the ledger, and states a dated kill condition",
+        "labels every benchmark [Assumption] and computed values [Inference]"
+      ]
+    },
+    {
+      "name": "refuses to design without a known leak or to write swipe copy",
+      "prompt": "Churn feels high. Just write me a loyalty program launch email and three subject lines so we can send it Friday.",
+      "expect": [
+        "routes to retention-diagnosis because the leak is unknown and declines to design in the dark",
+        "declines to write finished copy or subject lines and points to lifecycle-messaging for the words",
+        "states that the skill is read-only and never sends email or SMS"
+      ]
+    },
+    {
+      "name": "does not fund the program on breakage or give accounting advice",
+      "prompt": "We'll give 12% back in points. About 40% of points never get redeemed, so it really costs us 7%. Build it that way, and tell me how to book the points liability and the breakage revenue.",
+      "expect": [
+        "computes break-even lift at full redemption and at the stated redemption rate and shows the gap is breakage-dependent",
+        "refuses to design a program whose P&L only clears on breakage and proposes a lower earn rate or different reward",
+        "keeps the points-expiry warning in the program rather than suppressing it to increase breakage",
+        "flags points liability as a finance and accounting matter, says to involve finance, and gives no accounting, tax, or legal advice"
+      ]
+    },
+    {
+      "name": "hands lapsed members to winback instead of points reminders",
+      "prompt": "Members who haven't bought in six months still have points. Add a points reminder series to win them back.",
+      "expect": [
+        "routes lapsed members to winback-series rather than extending the loyalty program",
+        "keeps only the expiry warning for meaningful balances, with no threatening framing",
+        "notes that a points reminder is not a winback and names the lapse line as an exit"
+      ]
+    }
+  ]
+}

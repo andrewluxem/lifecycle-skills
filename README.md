@@ -1,4 +1,4 @@
-# Lifecycle Skills — Retention-Architect
+# Lifecycle Skills — Retention-Architect + Lifecycle-Programs
 
 Open-source agent skills for **lifecycle and retention marketing** — the
 keep-and-grow half of the growth stack. Where PLG and acquisition skills get
@@ -35,6 +35,31 @@ Segmenting, journey-building, and messaging all inherit the leak it finds, so th
 whole suite spends effort on the hole that's actually draining the bucket instead
 of the one that's easiest to see.
 
+## Lifecycle-Programs: the program library
+
+Retention-Architect is the strategy brain: diagnose the leak, segment, design
+journeys, write messages, prove lift. Lifecycle-Programs is the hands:
+deployable program blueprints a CRM team can build this week. Each one names the
+leak it fixes, declares its kill condition up front, and ships with a holdout
+recipe. No leak, no program; if the leak is unknown, it routes you to
+`retention-diagnosis` first.
+
+| Program | Leak zone | What it does | Primary KPI |
+|---------|-----------|--------------|-------------|
+| `welcome-series` | Activation | Day 0–14, five touches (promise → proof → guide → offer → last call). Purchasers exit to post-purchase immediately; the incentive is fenced to non-purchasers on day 7. | Revenue per new subscriber, 30 days |
+| `cart-abandon` | Activation / early-life | Timing-first recovery, first touch inside the hour, incentive as the last lever fenced to the persuadable. Never stacks with browse abandon. | Incremental recovered revenue and margin per entrant (co-primary) |
+| `post-purchase` | Early-life | Spends the attention transactional mail earns on review/UGC capture and cross-sell, then hands off to replenishment or loyalty. | First → second purchase rate |
+| `winback-series` | Resurrection (late mid-life at-risk) | Tiers by recency × value before spending incentive; escalates only where predicted value covers it; hands the truly gone to sunset. | Incremental net reactivated margin per entrant |
+| `replenishment-reminders` | Early / mid-life | Reminders at 70–80% of the observed usage cycle, one-tap reorder, graduation to subscription. | On-time repeat rate |
+| `loyalty-program` | Early / mid-life | Economics before creative: earn/burn modeling with breakage stated out loud; tiers vs. points chosen on purpose. | Incremental share of wallet vs. holdout on the earn accelerator |
+
+Every program follows the same anatomy (`SKILL.md` plus `references/`
+benchmarks, platform build for Braze / Klaviyo / Iterable / SFMC, QA checklist,
+measurement, and a fictional worked example). New programs start from
+`skills/program-template/`; the authoring contract is
+[`Lifecycle-Programs/PROGRAM-CONVENTIONS.md`](Lifecycle-Programs/PROGRAM-CONVENTIONS.md).
+The skills are read-only: they guide build, QA, and measurement. They never send.
+
 ## The one non-negotiable: incrementality
 
 A retained customer is not a saved customer. Email an at-risk segment and some of
@@ -51,11 +76,13 @@ Run inside a Claude Code session:
 ```
 /plugin marketplace add andrewluxem/lifecycle-skills
 /plugin install retention-architect@lifecycle-skills
+/plugin install lifecycle-programs@lifecycle-skills
 ```
 
 Then `/reload-skills` (or restart the session). Update later with
 `/plugin marketplace update lifecycle-skills` then
-`/plugin update retention-architect@lifecycle-skills`.
+`/plugin update retention-architect@lifecycle-skills` (and
+`lifecycle-programs@lifecycle-skills`).
 
 ### Cross-agent CLI
 
@@ -80,6 +107,7 @@ claude.ai → Customize → Skills → Upload skill.
 ```
 mkdir -p .claude/skills
 cp -r /path/to/lifecycle-skills/Retention-Architect/skills/* .claude/skills/
+cp -r /path/to/lifecycle-skills/Lifecycle-Programs/skills/* .claude/skills/
 ```
 
 Commit `.claude/skills/` and everyone gets them on clone.
@@ -91,6 +119,8 @@ Describe your problem and the right skill activates, or name one:
 - "Diagnose our retention — churn's up and I don't know where." → `retention-diagnosis`
 - "Set up my lifecycle context for bigdillpickleball.com." → `lifecycle-context`
 - "Prove our new winback flow actually works." → `retention-metrics`
+- "Build us a welcome series." → `welcome-series` (after the leak is known)
+- "Our cart abandon gives 15% off to everyone." → `cart-abandon`
 
 ## A note on your data
 

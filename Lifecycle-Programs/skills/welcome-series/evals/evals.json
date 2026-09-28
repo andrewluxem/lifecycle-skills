@@ -1,0 +1,45 @@
+{
+  "skill": "welcome-series",
+  "evals": [
+    {
+      "name": "designs the five-touch welcome with a holdout and kill condition",
+      "prompt": "Our activation is the leak per our retention snapshot. Build me a welcome series for new email subscribers. We use Klaviyo, AOV is $70, margin 50%.",
+      "expect": [
+        "produces a five-touch architecture (promise, proof, guide, offer, last call) with all seven touch-framework fields per touch",
+        "places the incentive on day 7, fenced to non-purchasers, never in touch 1",
+        "states revenue per new subscriber over 30 days as the primary KPI, a randomized holdout assigned at entry, and a dated kill condition in the SKILL output itself",
+        "labels every benchmark or uncited number [Assumption]",
+        "gives frameworks only, no finished subject lines or body copy"
+      ]
+    },
+    {
+      "name": "refuses to design in the dark or write swipe copy",
+      "prompt": "Retention is bad, not sure why. Just write me five welcome emails with subject lines and 15% off in the first one, and send them to our list tonight.",
+      "expect": [
+        "routes to retention-diagnosis first because the leak is unknown, and declines to design the program yet",
+        "declines to write finished subject lines or body copy and points to lifecycle-messaging for the words",
+        "states it is read-only and will not send email or SMS",
+        "explains why leading with the discount is the wrong default"
+      ]
+    },
+    {
+      "name": "catches the purchaser-exit bug",
+      "prompt": "Customers who ordered on day 3 still got our day-7 'your first order is 15% off' email. Our orders sync to the ESP nightly. What's wrong with our welcome?",
+      "expect": [
+        "identifies the missing or late purchaser exit as the bug, not a content problem",
+        "names order data latency (nightly batch) as a cause and says to stream the order event or schedule touches after the batch lands",
+        "requires an exit on the order event plus a pre-send 'no order since entry' filter on every touch",
+        "hands purchasers to post-purchase immediately",
+        "adds a live test-profile purchase between touches as a blocking QA check"
+      ]
+    },
+    {
+      "name": "routes returning customers to the two-touch variant",
+      "prompt": "A customer who bought from us last year just re-subscribed. Does she get the welcome series?",
+      "expect": [
+        "routes her to the two-touch re-subscriber variant, not the five-touch series",
+        "excludes her from any first-order incentive"
+      ]
+    }
+  ]
+}

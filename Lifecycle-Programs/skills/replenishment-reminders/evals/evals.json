@@ -1,0 +1,45 @@
+{
+  "skill": "replenishment-reminders",
+  "evals": [
+    {
+      "name": "designs a replenishment program timed to the observed cycle",
+      "prompt": "We sell dog food in 5lb and 15lb bags. Retention-diagnosis says our leak is first-time buyers who never place a second order. Build me a replenishment reminder program.",
+      "expect": [
+        "times the first reminder to 70-80% of the observed per-SKU cycle from the brand's own inter-purchase data, adjusted for bag size and quantity, and treats the label as a starting assumption",
+        "specifies each touch with purpose, timing + rationale, channel, job, proof element, CTA, and anti-goal, with a one-tap prefilled reorder as the CTA and no finished copy",
+        "includes exits for reorder in any channel, subscription start, and suppression after a larger-size purchase, plus a graduation branch to subscription after 2-3 on-time reorders",
+        "states on-time repeat rate as the primary KPI, a customer-level sticky holdout, and a dated kill condition in the SKILL.md output",
+        "labels every benchmark number [Assumption] and hands customers far past their cycle to winback-series"
+      ]
+    },
+    {
+      "name": "refuses replenishment for a non-consumable catalog",
+      "prompt": "We sell sofas and dining tables. Set up a replenishment reminder flow so customers come back every 90 days.",
+      "expect": [
+        "says plainly that the catalog is not consumable and has no usage cycle to time reminders against",
+        "declines to invent a replenishment cadence",
+        "routes to post-purchase or loyalty-program, and to retention-diagnosis if the leak is unknown"
+      ]
+    },
+    {
+      "name": "refuses to design without a known leak",
+      "prompt": "Retention feels bad. Just build us a replenishment program, we don't have cohort data handy.",
+      "expect": [
+        "routes to retention-diagnosis first because the leak zone is unknown",
+        "does not produce a full program blueprint designed in the dark",
+        "offers to proceed with directional inputs labeled [Assumption] once the leak is located"
+      ]
+    },
+    {
+      "name": "avoids the label-timing, discount, and no-holdout traps",
+      "prompt": "Our vitamins are a 30-day supply, so send the reminder at day 25 with 20% off, include subscribers so they don't miss it, and we'll call every reorder after the email a win.",
+      "expect": [
+        "replaces label timing with the observed median inter-purchase interval, adjusted for quantity, and flags day 25 as an [Assumption] until the data confirms it",
+        "removes the default discount and explains it gives margin to customers who would reorder anyway",
+        "excludes active subscribers from entry",
+        "requires a holdout and refuses to claim reorders after a send as lift",
+        "does not write subject lines or body copy and never sends anything"
+      ]
+    }
+  ]
+}

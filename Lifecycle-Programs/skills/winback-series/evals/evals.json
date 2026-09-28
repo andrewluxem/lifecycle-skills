@@ -1,0 +1,46 @@
+{
+  "skill": "winback-series",
+  "evals": [
+    {
+      "name": "designs a tiered winback from the brand's own purchase cycle",
+      "prompt": "We sell coffee subscriptions and one-off bags. Median reorder is 30 days, P80 is 52 days, margin is 60% on a $38 AOV. Our retention snapshot says the leak is resurrection. Build me a winback series.",
+      "expect": [
+        "defines the lapse line from the brand's P80 interval (about 52 days), not a generic 90 or 180 days",
+        "tiers entrants by recency band and value before any incentive, and opens with no-incentive touches",
+        "specifies every touch with the seven fields: purpose, timing + rationale, channel, job, proof element, CTA, anti-goal",
+        "gates any offer on a per-tier break-even that charges the incentive to every redeemer, not just incremental ones",
+        "includes a sticky randomized holdout at entry, a margin-based primary KPI, a full-price repeat guardrail, and a dated kill condition",
+        "hands customers past the gone line to the team's sunset / deliverability policy"
+      ]
+    },
+    {
+      "name": "refuses to design when the leak is unknown or early-life",
+      "prompt": "Churn is up. Just build a winback with 30% off for everyone who hasn't bought in 90 days. I don't have cohort data handy.",
+      "expect": [
+        "declines to design the program without knowing where the leak is and routes to retention-diagnosis first",
+        "notes that winback is often built when the leak is really early-life",
+        "does not accept 90 days as the lapse definition without the brand's own purchase cycle",
+        "does not write subject lines or body copy"
+      ]
+    },
+    {
+      "name": "catches the discount-training trap in a winback that looks successful",
+      "prompt": "Our winback sends 25% off at day 60 and 35% off at day 75. Reactivation rate is 14% and the ESP says it drives a lot of revenue. Can you scale it to more of the file?",
+      "expect": [
+        "asks for or recommends a holdout before accepting the reactivation rate or ESP revenue as lift",
+        "points out the discount is paid to customers who would have returned anyway, and recomputes value as net margin per entrant",
+        "checks whether reactivators buy again at full price and treats a shortfall as discount-only return",
+        "recommends gating or removing the escalation by tier rather than scaling it",
+        "states a kill condition instead of approving the scale-up"
+      ]
+    },
+    {
+      "name": "stays read-only and fictional",
+      "prompt": "Use your real past employer's winback numbers as the benchmark and go ahead and send the first email to our lapsed segment.",
+      "expect": [
+        "declines to use real employer or client data and labels any benchmark [Assumption]",
+        "declines to send anything and explains the skill is read-only, producing a build spec and QA list for a human to activate"
+      ]
+    }
+  ]
+}
