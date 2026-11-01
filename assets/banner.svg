@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" role="img" aria-labelledby="t d">
+<title id="t">lifecycle-skills</title>
+<desc id="d">Three panels from the cart-abandon program, whose worked example is a fictional brand. 1, the brief: Competitors all put 15% off in the first email, so let's do that and send it faster; current flow, one email at 24 h, no holdout. 2, the diagnosis puts the dominant leak at activation, and the program splits off a 20% holdout, per person, sticky, at entry. 3, the skill's kill condition: if incremental margin per entrant (treated minus holdout, net of incentive cost) is not positive at the 6-week read, touch 4 comes out. The repo's rule: No holdout, no lift claim.</desc>
+<style>
+.serif{font-family:Georgia,"Times New Roman",serif}
+.sans{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace}
+.lab{font-size:10px;letter-spacing:1.8px;font-weight:600}
+.cap{font-size:11.5px;fill:#8b9096}
+.hl{fill:none;stroke-width:1.5;opacity:0}
+.h1{animation:h1 12s infinite}
+.h2{animation:h2 12s infinite}
+.h3{animation:h3 12s infinite}
+.r1{animation:r1 12s infinite}
+.r2{animation:r2 12s infinite}
+.r3{animation:r3 12s infinite}
+.rb{animation:rb 12s infinite}
+.rc{animation:rc 12s infinite}
+.rd{animation:rd 12s infinite}
+.re{animation:re 12s infinite}
+.rf{animation:rf 12s infinite}
+@keyframes h1{0%,16.7%{opacity:0}18.7%,42.4%{opacity:1}44.1%,100%{opacity:0}}
+@keyframes h2{0%,16.7%,18.7%,44.1%{opacity:0}45.8%,67.8%{opacity:1}69.5%,100%{opacity:0}}
+@keyframes h3{0%,16.7%,18.7%,69.5%{opacity:0}71.2%,94.9%{opacity:1}96.6%,100%{opacity:0}}
+@keyframes r1{0%,16.7%{opacity:1}18.7%,20.4%{opacity:0}22.1%,100%{opacity:1}}
+@keyframes r2{0%,16.7%{opacity:1}18.7%,28.9%{opacity:0}30.6%,100%{opacity:1}}
+@keyframes r3{0%,16.7%{opacity:1}18.7%,35.6%{opacity:0}37.3%,100%{opacity:1}}
+@keyframes rb{0%,16.7%{opacity:1}18.7%,45%{opacity:0}46.6%,100%{opacity:1}}
+@keyframes rc{0%,16.7%{opacity:1}18.7%,53.4%{opacity:0}55.1%,100%{opacity:1}}
+@keyframes rd{0%,16.7%{opacity:1}18.7%,61%{opacity:0}62.7%,100%{opacity:1}}
+@keyframes re{0%,16.7%{opacity:1}18.7%,72.1%{opacity:0}73.7%,100%{opacity:1}}
+@keyframes rf{0%,16.7%{opacity:1}18.7%,83.9%{opacity:0}85.6%,100%{opacity:1}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect width="900" height="300" fill="#141618"/>
+
+<text x="32" y="50" class="serif" font-size="28" fill="#e4dfd4">lifecycle-skills</text>
+<text x="223" y="50" class="sans" font-size="13.5" fill="#a9adb2">Open-source agent skills for lifecycle and retention marketing.</text>
+
+<g>
+<text x="32" y="88" class="sans lab" fill="#a39bbd">1 · THE BRIEF</text>
+<rect x="32" y="98" width="252" height="152" rx="3" fill="#1b1e21" stroke="#2e3237"/>
+<rect class="hl h1" x="32" y="98" width="252" height="152" rx="3" stroke="#a39bbd"/>
+<text x="44" y="115" class="mono" font-size="10" fill="#8b9096">examples/example-brief.md · fictional</text>
+<line x1="33" y1="123" x2="283" y2="123" stroke="#2e3237"/>
+<g class="r1"><rect x="44" y="134" width="214" height="62" rx="10" fill="#2a2e33"/><text x="58" y="154" class="sans" font-size="10.5" fill="#e4dfd4">Competitors all put 15% off in the</text><text x="58" y="168" class="sans" font-size="10.5" fill="#e4dfd4">first email, so let's do that and</text><text x="58" y="182" class="sans" font-size="10.5" fill="#e4dfd4">send it faster.</text></g>
+<g class="r2"><text x="44" y="217" class="mono" font-size="10" fill="#8b9096">Current flow</text><text x="44" y="233" class="sans" font-size="10.5" fill="#e4dfd4">One email at 24 h, no holdout</text></g>
+<rect class="r3" x="129" y="223" width="55" height="14" fill="none" stroke="#c8963e" stroke-dasharray="3 2"/>
+<text x="32" y="272" class="sans cap">A blanket discount and no holdout.</text>
+</g>
+
+<g>
+<text x="304" y="88" class="sans lab" fill="#c8963e">2 · LEAK, THEN BLUEPRINT</text>
+<rect x="304" y="98" width="282" height="152" rx="3" fill="#17191c" stroke="#2e3237"/>
+<rect class="hl h2" x="304" y="98" width="282" height="152" rx="3" stroke="#c8963e"/>
+<text x="316" y="115" class="mono" font-size="10" fill="#8b9096">examples/example-brief.md · fictional</text>
+<line x1="305" y1="123" x2="585" y2="123" stroke="#2e3237"/>
+<g class="rb"><text x="316" y="145" class="sans" font-size="10.5" fill="#e4dfd4">The snapshot puts the dominant</text><text x="316" y="159" class="sans" font-size="10.5" fill="#e4dfd4">leak at <tspan font-weight="700">activation</tspan></text></g>
+<g class="rc"><line x1="316" y1="172.5" x2="574" y2="172.5" stroke="#2e3237"/><text x="316" y="193" class="mono" font-size="10" fill="#e4dfd4"><tspan font-weight="700">Split A:</tspan> 20% holdout, per person,</text><text x="316" y="207" class="mono" font-size="10" fill="#e4dfd4">sticky, at entry.</text></g>
+<rect class="rd" x="312" y="183" width="210" height="29" fill="none" stroke="#93ad8c" stroke-dasharray="3 2"/>
+<text x="304" y="272" class="sans cap">Finds the leak, then specs the program.</text>
+</g>
+
+<g>
+<text x="606" y="88" class="sans lab" fill="#93ad8c">3 · THE HOLDOUT DECIDES</text>
+<rect x="606" y="98" width="262" height="152" rx="3" fill="#1b1e21" stroke="#2e3237"/>
+<rect class="hl h3" x="606" y="98" width="262" height="152" rx="3" stroke="#93ad8c"/>
+<text x="618" y="115" class="mono" font-size="10" fill="#8b9096">cart-abandon/SKILL.md</text>
+<line x1="607" y1="123" x2="867" y2="123" stroke="#2e3237"/>
+<g class="re"><text x="618" y="143" class="sans" font-size="10.5" fill="#e4dfd4"><tspan font-weight="700">Kill condition:</tspan> if incremental margin</text><text x="618" y="157" class="sans" font-size="10.5" fill="#e4dfd4">per entrant (treated minus holdout, net</text><text x="618" y="171" class="sans" font-size="10.5" fill="#e4dfd4">of incentive cost) is not positive at</text><text x="618" y="185" class="sans" font-size="10.5" fill="#e4dfd4">the 6-week read, I strip touch 4 first</text></g>
+<g class="rf"><line x1="618" y1="197.5" x2="856" y2="197.5" stroke="#2e3237"/><text x="618" y="216" class="mono" font-size="10" fill="#8b9096">PROGRAM-CONVENTIONS.md</text><text x="618" y="234" class="sans" font-size="11.5" fill="#93ad8c" font-weight="700">No holdout, no lift claim.</text></g>
+<text x="606" y="272" class="sans" font-size="11.5" fill="#93ad8c">The holdout decides what counts as a win.</text>
+</g>
+</svg>

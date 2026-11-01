@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/banner.svg" alt="lifecycle-skills: Open-source agent skills for lifecycle and retention marketing. Retention-Architect diagnoses the leak; Lifecycle-Programs ships the fix: welcome, cart abandon, post-purchase, winback, replenishment, and loyalty programs. Holdout-first: no holdout, no lift claim." width="100%"></p>
+
 # Lifecycle Skills — Retention-Architect + Lifecycle-Programs
 
 Open-source agent skills for **lifecycle and retention marketing** — the
