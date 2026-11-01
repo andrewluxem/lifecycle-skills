@@ -44,8 +44,8 @@
 <text x="44" y="115" class="mono" font-size="10" fill="#8b9096">examples/example-brief.md · fictional</text>
 <line x1="33" y1="123" x2="283" y2="123" stroke="#2e3237"/>
 <g class="r1"><rect x="44" y="134" width="214" height="62" rx="10" fill="#2a2e33"/><text x="58" y="154" class="sans" font-size="10.5" fill="#e4dfd4">Competitors all put 15% off in the</text><text x="58" y="168" class="sans" font-size="10.5" fill="#e4dfd4">first email, so let's do that and</text><text x="58" y="182" class="sans" font-size="10.5" fill="#e4dfd4">send it faster.</text></g>
-<g class="r2"><text x="44" y="217" class="mono" font-size="10" fill="#8b9096">Current flow</text><text x="44" y="233" class="sans" font-size="10.5" fill="#e4dfd4">One email at 24 h, no holdout</text></g>
-<rect class="r3" x="129" y="223" width="55" height="14" fill="none" stroke="#c8963e" stroke-dasharray="3 2"/>
+<g class="r2"><text x="44" y="217" class="mono" font-size="10" fill="#8b9096">Current flow</text><text x="44" y="233" class="sans" font-size="10.5" fill="#e4dfd4">One email at 24 h,</text><text x="137" y="233" class="sans" font-size="10.5" fill="#e4dfd4">no holdout</text></g>
+<rect class="r3" x="133.5" y="222" width="56" height="15" fill="none" stroke="#c8963e" stroke-dasharray="3 2"/>
 <text x="32" y="272" class="sans cap">A blanket discount and no holdout.</text>
 </g>
 
@@ -57,7 +57,7 @@
 <line x1="305" y1="123" x2="585" y2="123" stroke="#2e3237"/>
 <g class="rb"><text x="316" y="145" class="sans" font-size="10.5" fill="#e4dfd4">The snapshot puts the dominant</text><text x="316" y="159" class="sans" font-size="10.5" fill="#e4dfd4">leak at <tspan font-weight="700">activation</tspan></text></g>
 <g class="rc"><line x1="316" y1="172.5" x2="574" y2="172.5" stroke="#2e3237"/><text x="316" y="193" class="mono" font-size="10" fill="#e4dfd4"><tspan font-weight="700">Split A:</tspan> 20% holdout, per person,</text><text x="316" y="207" class="mono" font-size="10" fill="#e4dfd4">sticky, at entry.</text></g>
-<rect class="rd" x="312" y="183" width="210" height="29" fill="none" stroke="#93ad8c" stroke-dasharray="3 2"/>
+<rect class="rd" x="312" y="182" width="210" height="31" fill="none" stroke="#93ad8c" stroke-dasharray="3 2"/>
 <text x="304" y="272" class="sans cap">Finds the leak, then specs the program.</text>
 </g>
 
